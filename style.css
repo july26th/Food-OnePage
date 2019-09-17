@@ -1,0 +1,95 @@
+*, p {
+  margin: 0;
+  padding: 0; }
+
+a {
+  color: unset; }
+
+a:hover {
+  text-decoration: none;
+  color: unset; }
+
+.weight_600 {
+  font-weight: 600; }
+
+.header-text {
+  margin-bottom: 80px; }
+  .header-text p {
+    color: #6d6d6d;
+    font-size: 18px;
+    font-weight: 200; }
+  .header-text span {
+    color: #232323;
+    font-weight: 200; }
+  .header-text hr {
+    border-top-color: #232323;
+    width: 70px;
+    margin: 20px auto; }
+
+.about {
+  padding: 120px 0; }
+  .about .about-item i {
+    font-size: 60px;
+    color: #f15927;
+    transition: 0.3s; }
+  .about .about-item h4 {
+    margin: 16px 0;
+    transition: 0.3s; }
+  .about .about-item p {
+    color: #676767;
+    word-spacing: 2px;
+    line-height: 26px; }
+  .about .about-item:hover i, .about .about-item:hover h4 {
+    transform: translateY(-10px); }
+  .about .about-item:hover h4 {
+    color: #f15927; }
+  .about .about-item:hover i {
+    color: #676767; }
+  .about .about-img {
+    background: url("img/about.jpg");
+    background-position: center;
+    background-size: cover; }
+
+.margin-top {
+  margin-top: 50px; }
+
+.menu {
+  padding: 120px 0;
+  background: #f7f7f7; }
+  .menu .owl-carousel {
+    height: 310px; }
+  .menu .item {
+    height: 300px; }
+    .menu .item .dish-item {
+      box-shadow: 0px -1px 30px 1px rgba(0, 0, 0, 0.2);
+      border-radius: 10px; }
+      .menu .item .dish-item .dish-img {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        overflow: hidden; }
+        .menu .item .dish-item .dish-img img {
+          transition: 0.3s; }
+      .menu .item .dish-item .dish-info {
+        display: flex;
+        justify-content: space-between;
+        transition: 0.3s; }
+        .menu .item .dish-item .dish-info span {
+          font-size: 18px;
+          line-height: 30px;
+          padding: 15px 25px; }
+    .menu .item:hover img {
+      transform: scale(1.2); }
+    .menu .item:hover .dish-info {
+      background: #f15927;
+      color: #fff; }
+
+@media only screen and (max-width: 991px) {
+  .about .about-item {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto; }
+  .about .col-lg-6 {
+    height: 720px;
+    margin-bottom: 50px; } }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+  <link rel="stylesheet" href="owlcarousel/owl.theme.default.css">
+  <link rel="stylesheet" href="style.css">
+
+  <title>Food Webiste</title>
+</head>
+
+<body>
+  <section class="about">
+    <div class="container">
+      <div class="text-center header-text">
+        <p class="light-gray">
+          Check it
+        </p>
+        <h2><span>About Our</span> Hotel</h2>
+        <hr />
+      </div>
+      <div class="row">
+        <div class="col-lg-3 text-center">
+          <div class="about-item">
+            <i class="fas fa-paper-plane"></i>
+            <h4>Our Mission</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sit amet, consectetur adipisicing.</p>
+          </div>
+          <div class="about-item margin-top">
+            <i class="far fa-calendar-alt"></i>
+            <h4>Our Values</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sit amet, consectetur adipisicing.</p>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="about-img w-100 h-100"></div>
+        </div>
+        <div class="col-lg-3 text-center">
+          <div class="about-item">
+            <i class="fas fa-archive"></i>
+            <h4>Our Locations</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sit amet, consectetur adipisicing.</p>
+          </div>
+          <div class="about-item margin-top">
+            <i class="fas fa-phone"></i>
+            <h4>24/7 Help Support</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sit amet, consectetur adipisicing.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="menu">
+    <div class="container">
+      <div class="popular-dishes">
+        <div class="text-center header-text">
+          <p class="light-gray">
+            What we do
+          </p>
+          <h2>Popular <span>Dishes</span></h2>
+          <hr />
+        </div>
+        <div class="owl-carousel owl-theme">
+          <div class="item">
+            <a href="">
+              <div class="dish-item">
+                <div class="dish-img">
+                  <img src="img/menu/dish-6.jpg" alt="">
+                </div>
+                <div class="dish-info">
+                  <span>Panzenella</span>
+                  <span class="weight_600">$21.00</span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="item">
+            <a href="">
+              <div class="dish-item">
+                <div class="dish-img">
+                  <img src="img/menu/dish-1.jpg" alt="">
+                </div>
+                <div class="dish-info">
+                  <span>Panzenella</span>
+                  <span class="weight_600">$21.00</span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="item">
+            <a href="">
+              <div class="dish-item">
+                <div class="dish-img">
+                  <img src="img/menu/dish-3.jpg" alt="">
+                </div>
+                <div class="dish-info">
+                  <span>Panzenella</span>
+                  <span class="weight_600">$21.00</span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="item">
+            <a href="">
+              <div class="dish-item">
+                <div class="dish-img">
+                  <img src="img/menu/dish-2.jpg" alt="">
+                </div>
+                <div class="dish-info">
+                  <span>Panzenella</span>
+                  <span class="weight_600">$21.00</span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="item">
+            <a href="">
+              <div class="dish-item">
+                <div class="dish-img">
+                  <img src="img/menu/dish-4.jpg" alt="">
+                </div>
+                <div class="dish-info">
+                  <span>Panzenella</span>
+                  <span class="weight_600">$21.00</span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="item">
+            <a href="">
+              <div class="dish-item">
+                <div class="dish-img">
+                  <img src="img/menu/dish-5.jpg" alt="">
+                </div>
+                <div class="dish-info">
+                  <span>Panzenella</span>
+                  <span class="weight_600">$21.00</span>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/font-awesome.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="owlcarousel/owl.carousel.min.js"></script>
+  <!-- <script type="text/javascript" src="js/script.js"></script> -->
+  <script>
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 10,
+      nav: false,
+      dots: false,
+      responsive: {
+        0: {
+          items: 1
+        },
+        600: {
+          items: 2
+        },
+        1000: {
+          items: 3
+        }
+      }
+    })
+  </script>
+</body>
+
+</html>

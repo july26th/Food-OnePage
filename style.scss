@@ -1,0 +1,136 @@
+$lightGray: #6d6d6d;
+$lightDark: #232323;
+$orange: #f15927;
+$textLight: #676767;
+$font18: 18px;
+$transfast: 0.3s;
+$fontW_200: 200;
+*, p {
+    margin: 0;
+    padding: 0;
+}
+a {
+    color: unset;
+}
+a:hover {
+    text-decoration: none;
+    color: unset;
+}
+.weight_600 {
+    font-weight: 600;
+}
+.header-text {
+    margin-bottom: 80px;
+    p {
+        color: $lightGray;
+        font-size: $font18;
+        font-weight: $fontW_200;
+    }
+    span {
+        color: $lightDark;
+        font-weight: $fontW_200;
+    }
+    hr {
+        border-top-color: $lightDark;
+        width: 70px;
+        margin: 20px auto;
+    }
+}
+.about {
+    padding: 120px 0;
+    .about-item {
+        i {
+            font-size: 60px;
+            color: $orange;
+            transition: $transfast;
+        }
+        h4 {
+            margin: 16px 0;
+            transition: $transfast;
+        }
+        p {
+            color: $textLight;
+            word-spacing: 2px;
+            line-height: 26px;
+        }
+        &:hover {
+            i, h4 {
+                transform: translateY(-10px);
+            }
+            h4 {
+                color: $orange;
+            }
+            i {
+                color: $textLight;
+            }
+        }
+    }
+    .about-img {
+        background: url("img/about.jpg");
+        background-position: center;
+        background-size: cover;
+    }
+}
+.margin-top {
+    margin-top: 50px;
+}
+
+
+
+
+.menu {
+    padding: 120px 0;
+    background: #f7f7f7;
+    .owl-carousel {
+        height: 310px;
+    }
+    .item {
+        height: 300px;
+        .dish-item {
+            box-shadow: 0px -1px 30px 1px rgba(0,0,0,0.2);
+            border-radius: 10px;
+            .dish-img {
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+                overflow: hidden;
+                img {
+                    transition: $transfast;   
+                }
+            }  
+            .dish-info {     
+                display: flex;
+                justify-content: space-between;
+                transition: $transfast;
+                span {
+                    font-size: $font18;
+                    line-height: 30px;
+                    padding: 15px 25px;
+                }
+            }
+        }
+        &:hover {
+            img {
+                transform: scale(1.2);
+            }
+            .dish-info {
+                background: $orange;
+                color: #fff;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 991px) {
+
+.about {
+    .about-item {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .col-lg-6 {
+        height: 720px;
+        margin-bottom: 50px;
+    }
+}
+}
