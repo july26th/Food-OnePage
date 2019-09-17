@@ -63,7 +63,7 @@
           <h2>Popular <span>Dishes</span></h2>
           <hr />
         </div>
-        <div class="owl-carousel owl-theme">
+        <div class="owl-carousel owl-menu owl-theme">
           <div class="item">
             <a href="">
               <div class="dish-item">
@@ -147,6 +147,82 @@
     </div>
 
   </section>
+  <section class="status">
+    <div class="status-img">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 status-item text-center">
+            <a href=""><i class="far fa-smile"></i>
+              <p class="status-number weight_600 my-2">4680</p>
+              <p class="status-name">Happy Customer</p>
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-6 status-item text-center">
+            <a href=""><i class="fas fa-utensils"></i>
+              <p class="status-number weight_600 my-2">865</p>
+              <p class="status-name">Dished Served</p>
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-6 status-item text-center">
+            <a href=""><i class="fas fa-glass-martini"></i>
+              <p class="status-number weight_600 my-2">510</p>
+              <p class="status-name">Total Beverages</p>
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-6 status-item text-center">
+            <a href=""><i class="fas fa-coffee"></i>
+              <p class="status-number weight_600 my-2">1350</p>
+              <p class="status-name">Cups of Coffee</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <section class="delicious-food">
+    <div class="container">
+      <div class="text-center header-text">
+        <p class="light-gray">
+            Let's Try
+        </p>
+        <h2><span>Our</span> Delicious <span>Food</span></h2>
+        <hr />
+      </div>
+    </div>
+
+  </section>
+  <section class="chiefs">
+    <div class="container">
+      <div class="popular-dishes">
+        <div class="text-center header-text">
+          <p class="light-gray">
+            Let's Meet
+          </p>
+          <h2><span>Our</span> Kitchen <span>Staff</span></h2>
+          <hr />
+        </div>
+        <div class="owl-carousel owl-chiefs owl-theme">
+          <div class="item">
+            <div class="chief-img">
+           <img src="img/chief/chef-1.jpg" alt="">
+          </div>
+          <div class="chief-info text-center mt-4">
+            <p class="chief-name">Sarah Taylor</p>
+            <p class="chief-role">Food Supervisor</p>
+            <div class="contact">
+              <a href="" class="hover-linkedin"><i class="fab fa-linkedin-in"></i></a>
+              <a href="" class="hover-fb"><i class="fab fa-facebook-f"></i></a>
+              <a href="" class="hover-twitter"><i class="fab fa-twitter"></i></a>
+            </div>
+          </div>
+          </div>
+       
+        </div>
+      </div>
+    </div>
+
+  </section>
   <script src="js/jquery.min.js"></script>
   <script src="js/popper.min.js"></script>
   <script src="js/font-awesome.js"></script>
@@ -154,7 +230,7 @@
   <script src="owlcarousel/owl.carousel.min.js"></script>
   <!-- <script type="text/javascript" src="js/script.js"></script> -->
   <script>
-    $('.owl-carousel').owlCarousel({
+    $('.owl-menu').owlCarousel({
       loop: true,
       margin: 10,
       nav: false,
@@ -168,6 +244,23 @@
         },
         1000: {
           items: 3
+        }
+      }
+    })
+    $('.owl-chiefs').owlCarousel({
+      loop: true,
+      margin: 10,
+      nav: false,
+      dots: false,
+      responsive: {
+        0: {
+          items: 1
+        },
+        600: {
+          items: 2  
+        },
+        1000: {
+          items: 4
         }
       }
     })

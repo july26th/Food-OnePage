@@ -4,6 +4,7 @@ $orange: #f15927;
 $textLight: #676767;
 $font18: 18px;
 $transfast: 0.3s;
+$transslow: 1s;
 $fontW_200: 200;
 *, p {
     margin: 0;
@@ -120,6 +121,106 @@ a:hover {
     }
 }
 
+.status {
+    .status-img {
+        padding: 120px 0;
+        background-image: url("img/status.jpg");
+        background-position: center;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 415px;
+        .status-item {
+            color: #fff;
+            i, .status-number {
+                font-size: 40px;
+                transition: $transfast;
+            }
+            .status-name {
+                font-size: 22px;
+                font-weight: $fontW_200;
+            }
+            &:hover {
+                i {
+                    transform: translateY(-6px);
+                    color: $orange;
+                }
+            }
+        }
+    }
+}
+
+.delicious-food {
+    padding: 120px 0;
+}
+
+.chiefs {
+    padding: 120px 0;
+    .chief-img {
+        border-radius: 50%;
+        width: 200px;
+        height: 200px;
+        margin: 0 auto;
+        overflow: hidden;
+        img {
+            transition: $transfast;
+        }
+    }
+    .chief-info {
+        .chief-name {
+            color: $lightDark;
+            font-size: $font18;
+            word-spacing: 2px;
+            line-height: 30px;
+            transition: $transslow;
+        }
+        .chief-role {
+            color: $textLight;
+            font-size: 14px;
+            word-spacing: 2px;
+            line-height: 26px;
+            margin: 8px 0;
+        }
+        .contact a {
+            border-radius: 15px;
+            width: 30px;
+            height: 30px;
+            margin: 0 4px;
+            line-height: 30px;
+            display: inline-block;
+            transition: $transslow;
+            &:hover .hover-linkedin {
+                color: #fff;         
+            }
+        }
+        .hover-linkedin {
+            &:hover {
+            background: #0077b5;
+            }
+        }
+        .hover-fb {
+            &:hover {
+            background: #3b5998;
+            }
+        }
+        .hover-twitter {
+            &:hover {
+            background: #00b2ff;
+            }
+        }
+    }
+    .item {
+        &:hover {
+            img {
+                transform: scale(1.1);
+            }
+            .chief-name {
+                color: $orange;
+            }
+        }
+    }
+}
+
 @media only screen and (max-width: 991px) {
 
 .about {
@@ -133,4 +234,32 @@ a:hover {
         margin-bottom: 50px;
     }
 }
+.status {
+    .status-img {
+        height: 592px;
+        padding: 80px 0;
+        .status-item {
+            margin-bottom: 65px;
+        }
+    }
 }
+}
+
+@media only screen and (max-width: 767px) {
+
+    .status {
+        .status-img {
+            height: 852px;
+            padding: 80px 0;
+            .status-item {
+                margin-bottom: 65px;
+                .status-number, i {
+                    font-size: 30px;
+                }
+                .status-name {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+    }

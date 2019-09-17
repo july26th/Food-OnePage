@@ -83,6 +83,72 @@ a:hover {
       background: #f15927;
       color: #fff; }
 
+.status .status-img {
+  padding: 120px 0;
+  background-image: url("img/status.jpg");
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 415px; }
+  .status .status-img .status-item {
+    color: #fff; }
+    .status .status-img .status-item i, .status .status-img .status-item .status-number {
+      font-size: 40px;
+      transition: 0.3s; }
+    .status .status-img .status-item .status-name {
+      font-size: 22px;
+      font-weight: 200; }
+    .status .status-img .status-item:hover i {
+      transform: translateY(-6px);
+      color: #f15927; }
+
+.delicious-food {
+  padding: 120px 0; }
+
+.chiefs {
+  padding: 120px 0; }
+  .chiefs .chief-img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    overflow: hidden; }
+    .chiefs .chief-img img {
+      transition: 0.3s; }
+  .chiefs .chief-info .chief-name {
+    color: #232323;
+    font-size: 18px;
+    word-spacing: 2px;
+    line-height: 30px;
+    transition: 1s; }
+  .chiefs .chief-info .chief-role {
+    color: #676767;
+    font-size: 14px;
+    word-spacing: 2px;
+    line-height: 26px;
+    margin: 8px 0; }
+  .chiefs .chief-info .contact a {
+    border-radius: 15px;
+    width: 30px;
+    height: 30px;
+    margin: 0 4px;
+    line-height: 30px;
+    display: inline-block;
+    transition: 1s; }
+    .chiefs .chief-info .contact a:hover .hover-linkedin {
+      color: #fff; }
+  .chiefs .chief-info .hover-linkedin:hover {
+    background: #0077b5; }
+  .chiefs .chief-info .hover-fb:hover {
+    background: #3b5998; }
+  .chiefs .chief-info .hover-twitter:hover {
+    background: #00b2ff; }
+  .chiefs .item:hover img {
+    transform: scale(1.1); }
+  .chiefs .item:hover .chief-name {
+    color: #f15927; }
+
 @media only screen and (max-width: 991px) {
   .about .about-item {
     width: 50%;
@@ -90,6 +156,22 @@ a:hover {
     margin-right: auto; }
   .about .col-lg-6 {
     height: 720px;
-    margin-bottom: 50px; } }
+    margin-bottom: 50px; }
+
+  .status .status-img {
+    height: 592px;
+    padding: 80px 0; }
+    .status .status-img .status-item {
+      margin-bottom: 65px; } }
+@media only screen and (max-width: 767px) {
+  .status .status-img {
+    height: 852px;
+    padding: 80px 0; }
+    .status .status-img .status-item {
+      margin-bottom: 65px; }
+      .status .status-img .status-item .status-number, .status .status-img .status-item i {
+        font-size: 30px; }
+      .status .status-img .status-item .status-name {
+        font-size: 20px; } }
 
 /*# sourceMappingURL=style.css.map */
