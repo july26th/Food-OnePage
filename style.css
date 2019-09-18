@@ -48,7 +48,8 @@ a:hover {
   .about .about-img {
     background: url("img/about.jpg");
     background-position: center;
-    background-size: cover; }
+    background-size: cover;
+    background-repeat: no-repeat; }
 
 .margin-top {
   margin-top: 50px; }
@@ -85,11 +86,12 @@ a:hover {
 
 .status .status-img {
   padding: 120px 0;
-  background-image: url("img/status.jpg");
+  background: url("img/status.jpg");
   background-position: center;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
   background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("img/status.jpg");
+  background-attachment: fixed;
   height: 415px; }
   .status .status-img .status-item {
     color: #fff; }
@@ -149,6 +151,112 @@ a:hover {
   .chiefs .item:hover .chief-name {
     color: #f15927; }
 
+.pricing {
+  padding-bottom: 120px; }
+  .pricing .pricing-item {
+    border: 2px solid #FFFFFF;
+    padding: 32px 21px;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background: #FFFFFF;
+    font-size: 14px; }
+    .pricing .pricing-item .price {
+      display: flex;
+      justify-content: space-between;
+      padding: 22px 0;
+      border-top: 2px solid rgba(48, 56, 64, 0.18);
+      border-bottom: 2px solid rgba(48, 56, 64, 0.18); }
+      .pricing .pricing-item .price span {
+        color: #f15927;
+        font-size: 18px; }
+      .pricing .pricing-item .price .price-number {
+        margin-top: -10px;
+        margin-left: -40px;
+        font-size: 42px;
+        color: #f15927; }
+      .pricing .pricing-item .price .text-end {
+        width: 65%;
+        padding-right: 10px; }
+    .pricing .pricing-item .includes {
+      padding: 20px 0;
+      line-height: 40px; }
+      .pricing .pricing-item .includes i {
+        margin-right: 10px;
+        font-size: 12px; }
+    .pricing .pricing-item button {
+      width: 100%;
+      background: #f15927;
+      color: #fff;
+      border-radius: 50px;
+      padding: 12px 0;
+      font-size: 18px;
+      transition: 0.3s; }
+      .pricing .pricing-item button:hover {
+        background: #232323; }
+  .pricing .middle-pricing {
+    background: #6d6d6d;
+    color: #fff;
+    border-color: #6d6d6d;
+    transition: 0.3s; }
+    .pricing .middle-pricing .price {
+      border-color: #fff; }
+      .pricing .middle-pricing .price span, .pricing .middle-pricing .price .price-number {
+        color: #fff; }
+    .pricing .middle-pricing button {
+      background: #fff;
+      color: #232323; }
+      .pricing .middle-pricing button:hover {
+        background: #f15927;
+        color: #fff; }
+    .pricing .middle-pricing:hover {
+      background: #232323; }
+
+.feedback {
+  padding: 120px 0;
+  height: 656px;
+  color: #fff;
+  background: url("img/feedback.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+  .feedback .text-center h2 {
+    font-size: 40px; }
+    .feedback .text-center h2 span {
+      color: #fff; }
+  .feedback .carousel-item {
+    text-align: center; }
+    .feedback .carousel-item p {
+      width: 85%;
+      margin: 0 auto;
+      word-spacing: 2px;
+      line-height: 26px;
+      font-size: 18px; }
+    .feedback .carousel-item .feedback-details {
+      font-weight: 200;
+      margin-bottom: 45px; }
+    .feedback .carousel-item .feed-by {
+      font-weight: 600; }
+  .feedback .carousel-indicators {
+    position: unset;
+    margin-top: 80px; }
+    .feedback .carousel-indicators li {
+      background: #fff; }
+    .feedback .carousel-indicators li.active {
+      background: #f15927; }
+  .feedback .feed-icon {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    transition: 0.3s; }
+    .feedback .feed-icon:hover {
+      background: #f15927; }
+  .feedback .carousel-control-prev {
+    left: 15px; }
+
+@media only screen and (max-width: 1200px) {
+  .feedback {
+    padding: 100px 0;
+    height: 616px; } }
 @media only screen and (max-width: 991px) {
   .about .about-item {
     width: 50%;
@@ -162,7 +270,16 @@ a:hover {
     height: 592px;
     padding: 80px 0; }
     .status .status-img .status-item {
-      margin-bottom: 65px; } }
+      margin-bottom: 65px; }
+
+  .pricing-item .price span {
+    width: 25%; }
+
+  .feedback {
+    padding: 80px 0;
+    height: 507px; }
+    .feedback .text-center {
+      margin-bottom: 30px; } }
 @media only screen and (max-width: 767px) {
   .status .status-img {
     height: 852px;
@@ -172,6 +289,11 @@ a:hover {
       .status .status-img .status-item .status-number, .status .status-img .status-item i {
         font-size: 30px; }
       .status .status-img .status-item .status-name {
-        font-size: 20px; } }
+        font-size: 20px; }
+
+  .pricing-item .price span {
+    width: 10%; }
+  .pricing-item .price .price-number {
+    margin-left: -120px !important; } }
 
 /*# sourceMappingURL=style.css.map */
