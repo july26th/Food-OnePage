@@ -26,6 +26,17 @@ a:hover {
     width: 70px;
     margin: 20px auto; }
 
+.btn-orange {
+  width: 100%;
+  background: #f15927;
+  color: #fff;
+  border-radius: 50px;
+  padding: 12px 0;
+  font-size: 18px;
+  transition: 0.3s; }
+  .btn-orange:hover {
+    background: #232323; }
+
 .about {
   padding: 120px 0; }
   .about .about-item i {
@@ -130,22 +141,6 @@ a:hover {
     word-spacing: 2px;
     line-height: 26px;
     margin: 8px 0; }
-  .chiefs .chief-info .contact a {
-    border-radius: 15px;
-    width: 30px;
-    height: 30px;
-    margin: 0 4px;
-    line-height: 30px;
-    display: inline-block;
-    transition: 1s; }
-    .chiefs .chief-info .contact a:hover .hover-linkedin {
-      color: #fff; }
-  .chiefs .chief-info .hover-linkedin:hover {
-    background: #0077b5; }
-  .chiefs .chief-info .hover-fb:hover {
-    background: #3b5998; }
-  .chiefs .chief-info .hover-twitter:hover {
-    background: #00b2ff; }
   .chiefs .item:hover img {
     transform: scale(1.1); }
   .chiefs .item:hover .chief-name {
@@ -183,16 +178,6 @@ a:hover {
       .pricing .pricing-item .includes i {
         margin-right: 10px;
         font-size: 12px; }
-    .pricing .pricing-item button {
-      width: 100%;
-      background: #f15927;
-      color: #fff;
-      border-radius: 50px;
-      padding: 12px 0;
-      font-size: 18px;
-      transition: 0.3s; }
-      .pricing .pricing-item button:hover {
-        background: #232323; }
   .pricing .middle-pricing {
     background: #6d6d6d;
     color: #fff;
@@ -252,6 +237,124 @@ a:hover {
       background: #f15927; }
   .feedback .carousel-control-prev {
     left: 15px; }
+
+.news {
+  padding: 120px 0; }
+  .news .news-title {
+    font-size: 22px;
+    transition: 1s; }
+  .news .news-date {
+    font-size: 14px; }
+  .news .news-date, .news .news-content {
+    word-spacing: 2px;
+    line-height: 26px;
+    color: #676767; }
+  .news .news-img {
+    margin: 12px 0;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 100%; }
+    .news .news-img img {
+      transition: 0.3s; }
+    .news .news-img:hover img {
+      transform: scale(1.1); }
+  .news .owl-dots {
+    margin-top: 80px !important; }
+    .news .owl-dots .owl-dot span {
+      background: #6d6d6d;
+      width: 12px;
+      height: 12px; }
+    .news .owl-dots .owl-dot.active span {
+      background: #f15927; }
+  .news .news-item {
+    width: 98%; }
+    .news .news-item:hover .news-title {
+      color: #f15927; }
+
+.google-map {
+  position: relative; }
+  .google-map iframe {
+    width: 100%;
+    height: 400px;
+    background: rgba(0, 0, 0, 0.4); }
+
+.contact a {
+  border-radius: 15px;
+  width: 30px;
+  height: 30px;
+  margin: 0 4px;
+  line-height: 30px;
+  display: inline-block;
+  transition: 1s; }
+  .contact a:hover .hover-linkedin {
+    color: #fff; }
+
+.hover-linkedin:hover {
+  background: #0077b5; }
+
+.hover-fb:hover {
+  background: #3b5998; }
+
+.hover-twitter:hover {
+  background: #00b2ff; }
+
+.hover-google:hover {
+  background: #C9302C; }
+
+.hover-pinterest:hover {
+  background: #BD081C; }
+
+.contact-form {
+  padding: 120px 0; }
+  .contact-form .header-text {
+    margin-bottom: 20px; }
+  .contact-form p {
+    color: #676767;
+    word-spacing: 2px;
+    line-height: 26px; }
+  .contact-form .contact-details {
+    margin-bottom: 30px; }
+  .contact-form .contact-item {
+    display: flex;
+    margin-bottom: 30px; }
+    .contact-form .contact-item i {
+      padding: 8px 30px 0 0;
+      transition: 1s;
+      font-size: 22px;
+      color: #676767; }
+    .contact-form .contact-item:hover i {
+      color: #f15927; }
+  .contact-form input, .contact-form textarea {
+    width: 100%;
+    border: 1px solid #e4e4e4;
+    background: #F4F4F4;
+    padding: 15px 20px;
+    color: #b5b5b5;
+    margin-bottom: 30px;
+    border-radius: 10px; }
+  .contact-form .p-70 {
+    padding-top: 70px; }
+  .contact-form button {
+    width: 242px; }
+  .contact-form textarea {
+    height: 200px; }
+
+::placeholder {
+  color: #b5b5b5   !important; }
+
+footer {
+  background: #232323;
+  padding: 120px 0;
+  color: #fff; }
+  footer .contact {
+    margin-bottom: 25px; }
+    footer .contact a {
+      line-height: 40px;
+      width: 43px;
+      height: 36px;
+      border-radius: 40px; }
+      footer .contact a i {
+        font-size: 20px; }
 
 @media only screen and (max-width: 1200px) {
   .feedback {

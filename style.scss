@@ -43,6 +43,18 @@ a:hover {
         margin: 20px auto;
     }
 }
+.btn-orange {
+    width: 100%;
+    background: $orange;
+    color: #fff;
+    border-radius: 50px;
+    padding: 12px 0;
+    font-size: 18px;
+    transition: $transfast;
+    &:hover {
+        background: $lightDark;
+    }
+}
 .about {
     padding: 120px 0;
     .about-item {
@@ -183,33 +195,6 @@ a:hover {
             line-height: 26px;
             margin: 8px 0;
         }
-        .contact a {
-            border-radius: 15px;
-            width: 30px;
-            height: 30px;
-            margin: 0 4px;
-            line-height: 30px;
-            display: inline-block;
-            transition: $transslow;
-            &:hover .hover-linkedin {
-                color: #fff;         
-            }
-        }
-        .hover-linkedin {
-            &:hover {
-            background: #0077b5;
-            }
-        }
-        .hover-fb {
-            &:hover {
-            background: #3b5998;
-            }
-        }
-        .hover-twitter {
-            &:hover {
-            background: #00b2ff;
-            }
-        }
     }
     .item {
         &:hover {
@@ -259,18 +244,6 @@ a:hover {
             i {
                 margin-right: 10px;
                 font-size: 12px;
-            }
-        }
-        button {
-            width: 100%;
-            background: $orange;
-            color: #fff;
-            border-radius: 50px;
-            padding: 12px 0;
-            font-size: 18px;
-            transition: $transfast;
-            &:hover {
-                background: $lightDark;
             }
         }
     }
@@ -353,6 +326,172 @@ a:hover {
     }
 }
 
+.news {
+    padding: 120px 0;
+    .news-title {
+        font-size: 22px;
+        transition: $transslow;
+    }
+    .news-date {
+        font-size: 14px;
+    }
+    .news-date, .news-content {
+        word-spacing: 2px;
+        line-height: 26px;
+        color: $textLight;
+    }
+    .news-img{
+        margin: 12px 0;
+        border-radius: 5px;
+        overflow: hidden;
+        width: 100%;
+        img {
+            transition: $transfast;
+        }
+        &:hover {
+            img {
+                transform: scale(1.1);
+            }
+        }
+    }
+    .owl-dots {
+        margin-top: 80px !important;
+        .owl-dot span {
+            background: $lightGray;
+            width: 12px;
+            height: 12px;
+        }
+        .owl-dot.active span {
+            background: $orange;
+        }
+    }
+    .news-item {
+        width: 98%;
+        &:hover {
+            .news-title {
+                color: $orange;
+            }
+        }
+    }
+}
+.google-map {
+    position: relative;
+    iframe {
+        width: 100%;
+        height: 400px;
+        background: rgba(0, 0, 0, 0.4);
+    }
+}
+.contact a {
+    border-radius: 15px;
+    width: 30px;
+    height: 30px;
+    margin: 0 4px;
+    line-height: 30px;
+    display: inline-block;
+    transition: $transslow;
+    &:hover .hover-linkedin {
+        color: #fff;         
+    }
+}
+.hover-linkedin {
+    &:hover {
+    background: #0077b5;
+    }
+}
+.hover-fb {
+    &:hover {
+    background: #3b5998;
+    }
+}
+.hover-twitter {
+    &:hover {
+    background: #00b2ff;
+    }
+}
+.hover-google {
+    &:hover {
+    background: #C9302C;
+    }
+}
+.hover-pinterest {
+    &:hover {
+    background: #BD081C;
+    }
+}
+
+
+
+.contact-form {
+    padding: 120px 0;
+    .header-text {
+        margin-bottom: 20px;
+    }
+    p {
+        color: $textLight;
+        word-spacing: 2px;
+        line-height: 26px;
+    }
+    .contact-details {
+        margin-bottom: 30px;
+    }
+    .contact-item {
+        display: flex;
+        margin-bottom: 30px;
+        i {
+            padding: 8px 30px 0 0;
+            transition: $transslow;
+            font-size: 22px;
+            color: $textLight;
+        }
+        &:hover {
+            i {
+                color: $orange;
+            }
+        }
+    }
+    input, textarea {
+        width: 100%;
+        border: 1px solid #e4e4e4;
+        background: #F4F4F4;
+        padding: 15px 20px;
+        color: #b5b5b5;
+        margin-bottom: 30px;
+        border-radius: 10px;
+    }
+    .p-70 {
+        padding-top: 70px;
+    }
+    button {
+        width: 242px;
+    }
+    textarea {
+        height: 200px;
+    }
+}
+::placeholder {
+    color: #b5b5b5   !important;
+}
+
+
+
+footer {
+    background: $lightDark;
+    padding: 120px 0;
+    color: #fff;
+    .contact {
+        margin-bottom: 25px;
+        a {
+        line-height: 40px;
+        width: 43px;
+        height: 36px;
+        border-radius: 40px;
+        i {
+            font-size: 20px;
+        }
+        }
+    }
+}
 @media only screen and (max-width: 1200px) {
 .feedback {
     padding: 100px 0;
