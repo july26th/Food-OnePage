@@ -8,8 +8,8 @@ $transslow: 1s;
 $fontW_200: 200;
 @mixin backgroundImg($url) {
     background: url($url);
-    background-position: center;
-    background-size: cover;
+    // background-position: center;
+    // background-size: cover;
     background-repeat: no-repeat;
 }
 *, p {
@@ -143,6 +143,8 @@ a:hover {
         @include backgroundImg("img/status.jpg");
         background-image: url("img/status.jpg");
         background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
         height: 415px;
         .status-item {
             color: #fff;
@@ -209,7 +211,7 @@ a:hover {
 }
 
 .pricing {
-    padding-bottom: 120px;
+    padding: 120px 0;
     .pricing-item {
         border: 2px solid #FFFFFF;
         padding: 32px 21px;
@@ -474,6 +476,62 @@ a:hover {
 }
 
 
+.expertise {
+    position: relative;
+    background: #f7f7f7;
+    .text-center {
+        margin-bottom: 30px;
+    }
+    .col-lg-6 {
+        padding: 120px 0;
+    }
+    .expertise-img {
+        @include backgroundImg("img/team.jpg");
+        position: absolute;
+        right: 0;
+        width: 50%;
+        height: 100%;
+        left: auto;
+    }
+    .progress-iem {
+        margin-bottom: 30px;
+        p {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        .progress {
+            background: #fff;
+            overflow: visible;
+            width: 95%;
+            border-radius: 50px;
+        }
+        .progress-bar {
+            background: $orange;
+            position: relative;
+            border-radius: 50px;
+        }
+        .progress-percent {
+            position: absolute;
+            left: 97%;
+            top: -40px;
+            color: #fff;
+            padding: 4px;
+            font-size: 10px;
+            background: $lightDark;
+            &:before {
+                content: ".";
+                position: absolute;
+                width: 0px;
+                height: 0px;
+                right: 8px;
+                top: 22px;
+                border-left: 6px solid transparent;
+                border-right: 6px solid transparent;
+                border-top: 8px solid #232323;
+            }
+        }
+    }
+}
 
 footer {
     background: $lightDark;
@@ -532,6 +590,16 @@ footer {
     height: 507px;
     .text-center {
         margin-bottom: 30px;
+    }
+}
+.contact-form {
+    .contact-item {
+        flex-direction: column;
+        text-align: center;
+        i {
+            padding-right: 0;
+            margin-bottom: 8px;
+        }
     }
 }
 }

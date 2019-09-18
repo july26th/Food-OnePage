@@ -58,8 +58,6 @@ a:hover {
     color: #676767; }
   .about .about-img {
     background: url("img/about.jpg");
-    background-position: center;
-    background-size: cover;
     background-repeat: no-repeat; }
 
 .margin-top {
@@ -98,11 +96,11 @@ a:hover {
 .status .status-img {
   padding: 120px 0;
   background: url("img/status.jpg");
-  background-position: center;
-  background-size: cover;
   background-repeat: no-repeat;
   background-image: url("img/status.jpg");
   background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
   height: 415px; }
   .status .status-img .status-item {
     color: #fff; }
@@ -147,7 +145,7 @@ a:hover {
     color: #f15927; }
 
 .pricing {
-  padding-bottom: 120px; }
+  padding: 120px 0; }
   .pricing .pricing-item {
     border: 2px solid #FFFFFF;
     padding: 32px 21px;
@@ -201,8 +199,6 @@ a:hover {
   height: 656px;
   color: #fff;
   background: url("img/feedback.jpg");
-  background-position: center;
-  background-size: cover;
   background-repeat: no-repeat; }
   .feedback .text-center h2 {
     font-size: 40px; }
@@ -342,6 +338,54 @@ a:hover {
 ::placeholder {
   color: #b5b5b5   !important; }
 
+.expertise {
+  position: relative;
+  background: #f7f7f7; }
+  .expertise .text-center {
+    margin-bottom: 30px; }
+  .expertise .col-lg-6 {
+    padding: 120px 0; }
+  .expertise .expertise-img {
+    background: url("img/team.jpg");
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    left: auto; }
+  .expertise .progress-iem {
+    margin-bottom: 30px; }
+    .expertise .progress-iem p {
+      font-size: 18px;
+      margin-bottom: 10px; }
+    .expertise .progress-iem .progress {
+      background: #fff;
+      overflow: visible;
+      width: 95%;
+      border-radius: 50px; }
+    .expertise .progress-iem .progress-bar {
+      background: #f15927;
+      position: relative;
+      border-radius: 50px; }
+    .expertise .progress-iem .progress-percent {
+      position: absolute;
+      left: 97%;
+      top: -40px;
+      color: #fff;
+      padding: 4px;
+      font-size: 10px;
+      background: #232323; }
+      .expertise .progress-iem .progress-percent:before {
+        content: ".";
+        position: absolute;
+        width: 0px;
+        height: 0px;
+        right: 8px;
+        top: 22px;
+        border-left: 6px solid transparent;
+        border-right: 6px solid transparent;
+        border-top: 8px solid #232323; }
+
 footer {
   background: #232323;
   padding: 120px 0;
@@ -382,7 +426,14 @@ footer {
     padding: 80px 0;
     height: 507px; }
     .feedback .text-center {
-      margin-bottom: 30px; } }
+      margin-bottom: 30px; }
+
+  .contact-form .contact-item {
+    flex-direction: column;
+    text-align: center; }
+    .contact-form .contact-item i {
+      padding-right: 0;
+      margin-bottom: 8px; } }
 @media only screen and (max-width: 767px) {
   .status .status-img {
     height: 852px;
