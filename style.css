@@ -115,10 +115,71 @@ a:hover {
       color: #f15927; }
 
 .delicious-food {
-  padding: 120px 0; }
+  padding: 120px 0;
+  width: 100%; }
+  .delicious-food .filter-item {
+    background: #FFFFFF;
+    border: 1px solid #ECECEC;
+    color: #888888;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 50px;
+    margin: 0 5px 10px 5px;
+    padding: 4px 16px; }
+  .delicious-food .filter-item.active {
+    background: #f15927;
+    color: #fff;
+    cursor: default; }
+  .delicious-food .masonry-item {
+    width: 33%; }
+    .delicious-food .masonry-item .layout {
+      position: relative;
+      overflow: hidden; }
+      .delicious-food .masonry-item .layout .background, .delicious-food .masonry-item .layout .text-center {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0; }
+      .delicious-food .masonry-item .layout img {
+        width: 100%;
+        height: auto;
+        transition: 0.3s ease-out; }
+      .delicious-food .masonry-item .layout .text-center {
+        color: #fff;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 3;
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.3s; }
+        .delicious-food .masonry-item .layout .text-center hr {
+          border-color: #fff;
+          margin: 10px auto; }
+        .delicious-food .masonry-item .layout .text-center div:after {
+          content: '';
+          display: block;
+          width: 40%;
+          height: 1px;
+          background-color: #fff;
+          margin: 8px auto 0; }
+      .delicious-food .masonry-item .layout .background {
+        background: rgba(241, 89, 39, 0.9);
+        visibility: hidden;
+        opacity: 0;
+        z-index: 2;
+        transition: 0.3s; }
+      .delicious-food .masonry-item .layout:hover .background, .delicious-food .masonry-item .layout:hover .text-center {
+        visibility: visible;
+        opacity: 1; }
+      .delicious-food .masonry-item .layout:hover img {
+        transform: scale(1.2); }
 
 .chiefs {
-  padding: 120px 0; }
+  padding-bottom: 120px; }
   .chiefs .chief-img {
     border-radius: 50%;
     width: 200px;
@@ -448,6 +509,11 @@ footer {
   .pricing-item .price span {
     width: 10%; }
   .pricing-item .price .price-number {
-    margin-left: -120px !important; } }
+    margin-left: -120px !important; }
+
+  .delicious-food .masonry-item {
+    width: 50%; }
+  .delicious-food .filter-item {
+    font-size: 13px; } }
 
 /*# sourceMappingURL=style.css.map */

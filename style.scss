@@ -168,10 +168,87 @@ a:hover {
 
 .delicious-food {
     padding: 120px 0;
+    width: 100%;
+    .filter-item {
+        background: #FFFFFF;
+        border: 1px solid #ECECEC;
+        color: #888888;
+        font-size: 14px;
+        cursor: pointer;
+        border-radius: 50px;
+        margin: 0 5px 10px 5px;
+        padding: 4px 16px;
+    }
+    .filter-item.active {
+        background: $orange;
+        color: #fff;
+        cursor: default;
+    }
+    .masonry-item {
+        width: 33%;
+        .layout {
+            position: relative;
+            overflow: hidden;
+            .background, .text-center {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+            }
+            img {
+                width: 100%;
+                height: auto;
+                transition: $transfast ease-out;
+            }
+            .text-center {
+                color: #fff;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                hr {
+                    border-color: #fff;
+                    margin: 10px auto;
+                }
+                div {
+                    &:after {
+                    content: '';
+                    display: block;
+                    width: 40%;
+                    height: 1px;
+                    background-color: #fff;
+                    margin: 8px auto 0;
+                    }
+                }      
+                z-index: 3;
+                opacity: 0;
+                visibility: hidden;
+                transition: $transfast;
+            }
+            .background {
+                background: rgba(241, 89, 39,.9);
+                visibility: hidden;
+                opacity: 0;
+                z-index: 2;
+                transition: $transfast;
+            }
+            &:hover {
+                .background, .text-center {
+                    visibility: visible;
+                    opacity: 1;
+                }
+                img {
+                    transform: scale(1.2);
+                }
+            }
+        }
+    }
 }
 
 .chiefs {
-    padding: 120px 0;
+    padding-bottom: 120px;
     .chief-img {
         border-radius: 50%;
         width: 200px;
@@ -550,6 +627,8 @@ footer {
         }
     }
 }
+
+
 @media only screen and (max-width: 1200px) {
 .feedback {
     padding: 100px 0;
@@ -631,4 +710,12 @@ footer {
             }
         }
     }
+.delicious-food {
+    .masonry-item {
+        width: 50%;
+    }
+    .filter-item {
+        font-size: 13px;
+    }
+}
     }
