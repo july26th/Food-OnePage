@@ -14,6 +14,71 @@
 </head>
 
 <body>
+  <header>
+    <nav class="nav">
+      <div class="container-fluid">
+        <div class="container nav-menu p-0 d-none d-md-flex">
+          <a class="nav-link active" href="#">Home</a>
+          <a class="nav-link" href="#">About</a>
+          <a class="nav-link" href="#">Our Menu</a>
+          <a class="nav-link" href="#">Chiefs</a>
+          <a class="nav-link" href="#"><img src="img/logo.png" class="logo" alt=""></a>
+          <a class="nav-link" href="#">Pricing</a>
+          <a class="nav-link" href="#">Reviews</a>
+          <a class="nav-link" href="#">Blog</a>
+          <a class="nav-link" href="#">Contact Us</a>
+        </div>
+        <i class="fas fa-bars menu-mobile"></i>
+      </div>
+
+    </nav>
+    <div class="header-item">
+      <div class="topleft-item item-absolute">
+        <img src="img/header-1.png" alt="">
+      </div>
+      <div class="bottomleft-item item-absolute">
+        <img src="img/header-4.png" alt="">
+        <img src="img/header-2.png" class="sub-1" alt="">
+        <img src="img/header-3.png" class="sub-2" alt="">
+      </div>
+      <div class="topright-item item-absolute">
+        <img src="img/header-5.png" alt="">
+      </div>
+      <div class="bottomright-item item-absolute">
+        <img src="img/header-7.png" alt="">
+        <img src="img/header-6.png" class="sub-3" alt="">
+      </div>
+      <div class="header-text">
+        <h2>Premium Steaks</h2>
+        <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+        <button class="btn btn-orange">Check Our Food</button>
+
+
+      </div>
+      <div class="nav-mobile">
+        <div class="head d-flex justify-content-between">
+          <img src="img/logo.png" alt="">
+          <i class="fas fa-times close-btn"></i>
+        </div>
+        <div class="content">
+          <a href=""><span>01.</span> Home</a>
+          <a href=""><span>02.</span> About</a>
+          <a href=""><span>03.</span> Our Menu</a>
+          <a href=""><span>04.</span> Chiefs</a>
+          <a href=""><span>05.</span> Pricing</a>
+          <a href=""><span>06.</span> Reviews</a>
+          <a href=""><span>07.</span> Blog</a>
+          <a href=""><span>08.</span> Contact Us</a>
+        </div>
+        <div class="contact text-center">
+          <a href="" class="hover-fb"><i class="fab fa-facebook-f"></i></a>
+          <a href="" class="hover-twitter"><i class="fab fa-twitter"></i></a>
+          <a href="" class="hover-pinterest"><i class="fab fa-pinterest"></i></a>
+          <a href="" class="hover-linkedin"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+  </header>
   <section class="about">
     <div class="container">
       <div class="text-center header-text">
@@ -799,14 +864,31 @@
       $effect.imagesLoaded().progress(function () {
         $effect.isotope('layout');
       });
-      $('.filter-item').click(function() {
+      $('.filter-item').click(function () {
         $('.filter-item').removeClass('active');
         $(this).addClass('active');
         data = $(this).data('filter')
-        $effect.isotope({filter: data})
-        
+        $effect.isotope({ filter: data })
+
       });
-      // $(".layout a").fancybox();
+      if($(window).scrollTop() > 50) $('.nav').addClass('change-nav');  
+      else $('.nav').removeClass('change-nav');  
+      $(window).scroll(function() {
+        var scroll =$(window).scrollTop();
+        console.log(scroll);
+        if (scroll > 50) $('.nav').addClass('change-nav');  
+        else $('.nav').removeClass('change-nav');  
+      });
+      $('.menu-mobile').click(function () {
+        $(this).addClass('rotate');
+        $('.close-btn').addClass('close-appear');
+        $('.nav-mobile').addClass('active');
+        return false;
+      });
+      $('.close-btn').click(function () {
+        $('.menu-mobile').removeClass('rotate');
+        $('.nav-mobile').removeClass('active');
+      })
     });
   </script>
 </body>

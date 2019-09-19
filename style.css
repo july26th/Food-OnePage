@@ -1,6 +1,10 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900");
 *, p {
   margin: 0;
   padding: 0; }
+
+body {
+  font-family: 'Raleway', sans-serif; }
 
 a {
   color: unset; }
@@ -36,6 +40,141 @@ a:hover {
   transition: 0.3s; }
   .btn-orange:hover {
     background: #232323; }
+
+header {
+  width: 100%;
+  background: #f7f7f7;
+  height: 630px;
+  overflow: hidden; }
+  header nav {
+    position: fixed;
+    margin-top: 20px;
+    width: 100%;
+    z-index: 10;
+    transition: 1s; }
+  header .nav.change-nav {
+    background: #fff;
+    margin-top: 0; }
+  header .container-fluid {
+    display: flex;
+    align-items: center;
+    padding: 8px 70px;
+    background: transparent; }
+    header .container-fluid i {
+      font-size: 26px;
+      padding-right: 10px; }
+  header .nav-menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+    header .nav-menu a {
+      font-size: 15px;
+      color: #232323;
+      font-weight: 500;
+      padding: 0; }
+  header .logo {
+    width: 140px;
+    padding: 14px;
+    margin: 0 20px; }
+  header .header-item {
+    position: relative;
+    width: 100%;
+    height: 100%; }
+    header .header-item .item-absolute {
+      position: absolute; }
+      header .header-item .item-absolute img {
+        width: 100%;
+        height: auto; }
+    header .header-item .topleft-item {
+      width: 450px;
+      left: -150px;
+      top: 30px; }
+    header .header-item .bottomleft-item {
+      width: 600px;
+      top: 260px;
+      left: -240px; }
+      header .header-item .bottomleft-item .sub-1 {
+        position: absolute;
+        top: 190px;
+        width: 35%;
+        left: 380px; }
+      header .header-item .bottomleft-item .sub-2 {
+        position: absolute;
+        top: 100px;
+        width: 25%;
+        left: 340px; }
+    header .header-item .topright-item {
+      top: 40px;
+      width: 400px;
+      right: -30px; }
+    header .header-item .bottomright-item {
+      top: 380px;
+      width: 500px;
+      right: -200px; }
+      header .header-item .bottomright-item .sub-3 {
+        position: absolute;
+        width: 40%;
+        top: -100px;
+        right: 400px; }
+    header .header-item .header-text {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column; }
+      header .header-item .header-text .text {
+        margin: 10px 0 15px 0; }
+      header .header-item .header-text button {
+        width: 230px; }
+  header .nav-mobile {
+    width: 270px;
+    height: 100%;
+    padding: 20px 30px;
+    position: absolute;
+    top: 0;
+    right: -270px;
+    background: #fff;
+    z-index: 11;
+    box-shadow: 3px 0 3px 3px #c2c2c2;
+    border-top: 3px solid #232323;
+    transition: 0.3s;
+    position: fixed; }
+    header .nav-mobile .head {
+      padding: 25px 0; }
+    header .nav-mobile img {
+      width: 110px; }
+  header .nav-mobile.active {
+    right: 0;
+    border-color: #f15927; }
+  header .close-btn {
+    transition: 0.3s;
+    font-size: 20px;
+    cursor: pointer; }
+  header .menu-mobile {
+    transition: 0.3s;
+    opacity: 1;
+    cursor: pointer; }
+  header .content {
+    margin: 70px 0; }
+    header .content a {
+      position: relative;
+      padding-left: 28px;
+      display: block;
+      margin-bottom: 22px; }
+    header .content span {
+      position: absolute;
+      top: 5px;
+      left: 0;
+      color: #f15927; }
+  header .contact a {
+    margin: 0px 8px; }
+
+.rotate {
+  transform: rotate(-45deg) scale(1.2) translate(-20px);
+  opacity: 0 !important; }
 
 .about {
   padding: 120px 0; }
@@ -464,7 +603,10 @@ footer {
 @media only screen and (max-width: 1200px) {
   .feedback {
     padding: 100px 0;
-    height: 616px; } }
+    height: 616px; }
+
+  nav .container-fluid {
+    padding: 20px 40px; } }
 @media only screen and (max-width: 991px) {
   .about .about-item {
     width: 50%;
@@ -514,6 +656,9 @@ footer {
   .delicious-food .masonry-item {
     width: 50%; }
   .delicious-food .filter-item {
-    font-size: 13px; } }
+    font-size: 13px; }
+
+  nav .container-fluid {
+    justify-content: flex-end; } }
 
 /*# sourceMappingURL=style.css.map */
