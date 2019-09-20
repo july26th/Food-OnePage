@@ -75,6 +75,7 @@ header {
     }
     .nav.change-nav {
         background: #fff;
+        box-shadow: 0 8px 6px -9px #999;
         margin-top: 0;
     }
     .container-fluid {
@@ -179,7 +180,6 @@ header {
         right: -270px;
         background: #fff;
         z-index: 11;
-        box-shadow: 3px 0 3px 3px #c2c2c2;
         border-top: 3px solid $lightDark;
         transition: $transfast;
         position: fixed;
@@ -192,6 +192,7 @@ header {
     }
     .nav-mobile.active {
         right: 0;
+        box-shadow: 3px 0 3px 3px #c2c2c2;
         border-color: $orange;
     }
     .close-btn {
@@ -264,6 +265,7 @@ header {
     }
     .about-img {
         @include backgroundImg("img/about.jpg");
+        background-size: cover;
     }
 }
 .margin-top {

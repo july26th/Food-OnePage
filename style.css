@@ -54,6 +54,7 @@ header {
     transition: 1s; }
   header .nav.change-nav {
     background: #fff;
+    box-shadow: 0 8px 6px -9px #999;
     margin-top: 0; }
   header .container-fluid {
     display: flex;
@@ -138,7 +139,6 @@ header {
     right: -270px;
     background: #fff;
     z-index: 11;
-    box-shadow: 3px 0 3px 3px #c2c2c2;
     border-top: 3px solid #232323;
     transition: 0.3s;
     position: fixed; }
@@ -148,6 +148,7 @@ header {
       width: 110px; }
   header .nav-mobile.active {
     right: 0;
+    box-shadow: 3px 0 3px 3px #c2c2c2;
     border-color: #f15927; }
   header .close-btn {
     transition: 0.3s;
@@ -197,7 +198,8 @@ header {
     color: #676767; }
   .about .about-img {
     background: url("img/about.jpg");
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat;
+    background-size: cover; }
 
 .margin-top {
   margin-top: 50px; }
