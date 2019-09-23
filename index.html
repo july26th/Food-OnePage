@@ -14,20 +14,20 @@
   <title>Food Webiste</title>
 </head>
 
-<body>
-  <header>
+<body data-spy="scroll" data-target=".nav" data-offset="50">
+  <header id="home">
     <nav class="nav">
       <div class="container-fluid">
         <div class="container nav-menu p-0 d-none d-md-flex">
-          <a class="nav-link active" href="#">Home</a>
-          <a class="nav-link" href="#">About</a>
-          <a class="nav-link" href="#">Our Menu</a>
-          <a class="nav-link" href="#">Chiefs</a>
+          <a class="nav-link active" href="#home">Home</a>
+          <a class="nav-link" href="#about">About</a>
+          <a class="nav-link" href="#menu">Our Menu</a>
+          <a class="nav-link" href="#chiefs">Chiefs</a>
           <a class="nav-link" href="#"><img src="img/logo.png" class="logo" alt=""></a>
-          <a class="nav-link" href="#">Pricing</a>
-          <a class="nav-link" href="#">Reviews</a>
-          <a class="nav-link" href="#">Blog</a>
-          <a class="nav-link" href="#">Contact Us</a>
+          <a class="nav-link" href="#pricing">Pricing</a>
+          <a class="nav-link" href="#reviews">Reviews</a>
+          <a class="nav-link" href="#news">Blog</a>
+          <a class="nav-link" href="#contact">Contact Us</a>
         </div>
         <i class="fas fa-bars menu-mobile"></i>
       </div>
@@ -80,7 +80,7 @@
       </div>
     </div>
   </header>
-  <section class="about">
+  <section class="about" id="about">
     <div class="container">
       <div class="text-center header-text">
         <p class="light-gray">
@@ -120,7 +120,7 @@
       </div>
     </div>
   </section>
-  <section class="menu">
+  <section class="menu" id="menu">
     <div class="container">
       <div class="popular-dishes">
         <div class="text-center header-text">
@@ -431,7 +431,7 @@
       </div>
     </div>
   </section>
-  <section class="chiefs">
+  <section class="chiefs" id="chiefs">
     <div class="container">
       <div class="popular-dishes">
         <div class="text-center header-text">
@@ -561,7 +561,7 @@
     </div>
 
   </section>
-  <section class="pricing">
+  <section class="pricing" id="pricing">
     <div class="container">
       <div class="text-center header-text">
         <p class="light-gray">
@@ -630,7 +630,7 @@
       </div>
     </div>
   </section>
-  <section class="feedback">
+  <section class="feedback" id="reviews">
     <div class="container">
       <div class="text-center header-text">
         <h2><span>What</span> People <span>Say ?</span></h2>
@@ -681,7 +681,7 @@
       </div>
     </div>
   </section>
-  <section class="news">
+  <section class="news" id="news">
     <div class="container">
       <div class="text-center header-text">
         <p class="light-gray">
@@ -765,7 +765,7 @@
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.669658423677!2d106.68006961428692!3d10.759922362441618!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f1b7c3ed289%3A0xa06651894598e488!2zxJDhuqFpIEjhu41jIFPDoGkgR8Oybg!5e0!3m2!1svi!2s!4v1568816886885!5m2!1svi!2s"
       frameborder="0" style="border:0;" allowfullscreen=""></iframe>
   </section>
-  <section class="contact-form">
+  <section class="contact-form" id="contact">
     <div class="container">
       <div class="row">
         <div class="col-lg-6 wow fadeInLeft">
@@ -899,41 +899,6 @@
         }
       }
     })
-    $(document).ready(function () {
-      new WOW().init();
-      $effect = $('.masonry').isotope({
-        itemSelector: '.masonry-item',
-        layoutMode: 'masonry'
-      });
-      $effect.imagesLoaded().progress(function () {
-        $effect.isotope('layout');
-      });
-      $('.filter-item').click(function () {
-        $('.filter-item').removeClass('active');
-        $(this).addClass('active');
-        data = $(this).data('filter')
-        $effect.isotope({ filter: data })
-
-      });
-      if($(window).scrollTop() > 50) $('.nav').addClass('change-nav');  
-      else $('.nav').removeClass('change-nav');  
-      $(window).scroll(function() {
-        var scroll =$(window).scrollTop();
-        console.log(scroll);
-        if (scroll > 50) $('.nav').addClass('change-nav');  
-        else $('.nav').removeClass('change-nav');  
-      });
-      $('.menu-mobile').click(function () {
-        $(this).addClass('rotate');
-        $('.close-btn').addClass('close-appear');
-        $('.nav-mobile').addClass('active');
-        return false;
-      });
-      $('.close-btn').click(function () {
-        $('.menu-mobile').removeClass('rotate');
-        $('.nav-mobile').removeClass('active');
-      })
-    });
   </script>
 </body>
 
